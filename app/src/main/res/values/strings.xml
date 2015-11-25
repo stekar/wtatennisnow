@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WTATennisNow</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_show_news">News</string>
+    <string name="action_show_ranking">Ranking</string>
+    <string name="action_show_schedule">Tournaments</string>
+    <string name="action_share">Share</string>
+
+    <!-- NEWS -->
+    <string name="news_day_today">TODAY</string>
+    <string name="news_heading">News</string>
+    <string name="news_share_heading">Share ATP News:</string>
+    <string name="news_header_recent">RECENT</string>
+    <string name="news_header_all">ALL</string>
+    <string name="news_header_starred">STARRED</string>
+    <string name="news_header_shared">SHARED</string>
+    <string name="news_header_hidden">HIDDEN</string>
+    <string name="news_ready_title_notification_statusbar">&lt;b>%1$s&lt;/b> new tennis headlines</string>
+    <string name="news_ready_summary_text_notification_statusbar">WTATennisNow: Don\'t miss a beat.</string>
+
+    <!-- RANKING -->
+    <string name="ranking_heading">WTA Top 10 Players</string>
+    <string name="ranking_career_heading">Career</string>
+    <string name="ranking_ytd_heading">Year to Date</string>
+    <string name="ranking_news_show">Show recent news</string>
+    <string name="ranking_news_hide">Hide recent news</string>
+    <string name="ranking_total_points">&lt;b>%1$s&lt;/b> points</string>
+    <string name="ranking_tournas_played">&lt;b>%1$s&lt;/b> tournaments played</string>
+    <string name="ranking_prize_money_current">&lt;b>%1$s&lt;/b> prize money</string>
+    <string name="ranking_prize_money_total">&lt;b>%1$s&lt;/b> prize money</string>
+    <string name="ranking_player_profile">Full profile</string>
+    <string name="ranking_player_site">Official site</string>
+    <string name="ranking_player_age_birthplace">&lt;b>%1$s&lt;/b> years old, from &lt;b>%2$s&lt;/b></string>
+    <string name="ranking_player_rank">&lt;b>[%1$s]&lt;/b></string>
+    <string name="ranking_player_rank_high">Ranked as high as &lt;b>%1$s&lt;/b></string>
+    <string name="ranking_player_titles_ytd">&lt;b>%1$s&lt;/b> titles</string>
+    <string name="ranking_player_titles_career">&lt;b>%1$s&lt;/b> titles</string>
+    <string name="ranking_player_titles_slam_ytd">&lt;b>%1$s&lt;/b> grand slam</string>
+    <string name="ranking_player_titles_slam_career">&lt;b>%1$s&lt;/b> grand slam</string>
+    <string name="ranking_player_titles_masters1000_ytd">&lt;b>%1$s&lt;/b> masters1000</string>
+    <string name="ranking_player_titles_masters1000_career">&lt;b>%1$s&lt;/b> masters1000</string>
+    <string name="ranking_header_all_players">ALL PLAYERS</string>
+    <string name="ranking_header_top_players">TOP PLAYERS</string>
+    <string name="ranking_header_titles_ytd_players">TITLES YTD</string>
+
+    <!-- SCHEDULE -->
+    <string name="schedule_tourna_header_all">ALL</string>
+    <string name="schedule_tourna_header_grand_slam_480dp">GRAND SLAMS</string>
+    <string name="schedule_tourna_header_grand_slam">SLAMS</string>
+    <string name="schedule_tourna_header_masters1000">MASTERS 1000</string>
+    <string name="schedule_tourna_header_starred">STARRED</string>
+    <string name="schedule_tourna_site">Official site</string>
+    <string name="schedule_tourna_event_add">Add event</string>
+    <string name="schedule_tourna_event_remove">Remove event</string>
+    <string name="schedule_tourna_points">&lt;b>%1$s&lt;/b> points</string>
+    <string name="schedule_tourna_winner">Winner: &lt;b>%1$s&lt;/b></string>
+    <string name="schedule_tourna_winner_tbd">No winner yet</string>
+    <string name="schedule_tourna_place">Located in %1$s, &lt;b>%2$s&lt;/b></string>
+    <string name="schedule_tourna_date">Starts on &lt;b>%1$s, %2$s&lt;/b></string>
+    <string name="schedule_tourna_surface">Played on &lt;b>%1$s&lt;/b> court</string>
+    <string name="schedule_tourna_prize_money">&lt;b>%1$s&lt;/b> prize money</string>
+    <string name="schedule_tourna_grand_slam">Grand Slam</string>
+    <string name="schedule_tourna_masters_1000">Masters 1000</string>
+    <string name="schedule_spinner_title">View Tournaments</string>
+    <string name="schedule_share_heading">Share WTA Tournament:</string>
+    <string name="schedule_copy_heading">Copy ATP Tournament:</string>
+    <string name="schedule_tourna_one_week">Lasts &lt;b>one week&lt;/b></string>
+    <string name="schedule_tourna_two_week">Lasts &lt;b>two weeks&lt;/b></string>
+    <string name="schedule_tourna_atp_tournament">WTA Tournament</string>
+    <string name="schedule_tourna_spinner_label">WTA Tournaments</string>
+    <string name="schedule_tourna_title_notification_statusbar">&lt;b>%1$s&lt;/b> tournament news.</string>
+    <string name="schedule_tourna_content_notification_statusbar">%1$s wins %2$s.</string>
+    <string name="schedule_tourna_summary_text_notification_statusbar">WTATennisNow: Don\'t miss a beat.</string>
+
+    <!-- REACHABILITY -->
+    <string name="reachability_not_connected">Your device is not connected to the network, via WiFi or cellular data. \n\n Please check your Settings, such as Airplane mode.</string>
+    <string name="reachability_not_connected_toast">"You are not connected to the Internet"</string>
+
+    <!-- PREFS -->
+    <string name="prefs_app_about_category">ABOUT</string>
+    <string name="prefs_app_about_iconography_header">Iconography</string>
+    <string name="prefs_app_about_iconography">This application uses some icons from Icons4Android.</string>
+
+    <string name="prefs_app_notif_category">NOTIFICATIONS</string>
+    <string name="prefs_app_notif_news_header">New Headlines</string>
+    <string name="prefs_app_notif_news">Let me know when there are updated news.</string>
+    <string name="prefs_app_notif_tournas_header">Tournament Updates</string>
+    <string name="prefs_app_notif_tournas">Let me know when there are updated tournaments info.</string>
+
+    <string name="prefs_app_news_category">ATP NEWS</string>
+    <string name="prefs_app_news_deleted_clear_header">Deleted Headlines</string>
+    <string name="prefs_app_news_deleted_clear_summary">Restore &lt;b>%1$s&lt;/b> deleted news.</string>
+    <string name="prefs_app_news_deleted_clear_summary_empty">There are no deleted news.</string>
+
+    <string name="prefs_app_news_hidden_clear_header">Hidden Headlines</string>
+    <string name="prefs_app_news_hidden_clear_summary">Make &lt;b>%1$s&lt;/b> hidden news visible.</string>
+    <string name="prefs_app_news_hidden_clear_summary_empty">There are no hidden news.</string>
+    <string name="prefs_app_news_hiddens_clear_success">%1$s hidden news are now visible.</string>
+    <string name="prefs_app_news_hidden_clear_success">%1$s hidden news is now visible.</string>
+
+    <string name="prefs_app_news_share_clear_header">Shared Headlines</string>
+    <string name="prefs_app_news_share_clear">Clear all the news I have shared</string>
+    <string name="prefs_app_news_shares_clear_success">%1$s shared news have been cleared.</string>
+    <string name="prefs_app_news_share_clear_success">%1$s shared news has been cleared.</string>
+    <string name="prefs_app_news_deleteds_clear_success">%1$s deleted news are now restored, and visible.</string>
+    <string name="prefs_app_news_deleted_clear_success">%1$s deleted news is now restored, and visible.</string>
+
+    <string name="prefs_app_tourna_category">ATP TOURNAMENTS</string>
+    <string name="prefs_app_tourna_events_clear_success">%1$s events have been removed from your Google calendar.</string>
+    <string name="prefs_app_tourna_event_clear_success">%1$s event has been removed from your Google calendar.</string>
+    <string name="prefs_app_tourna_events_clear_header">Calendar Events</string>
+    <string name="prefs_app_tourna_events_clear_summary">Remove &lt;b>%1$s&lt;/b> events from my Google calendar.</string>
+    <string name="prefs_app_tourna_events_clear_summary_empty">There are no events in your Google calendar.</string>
+    <string name="prefs_app_tourna_events_reminders_header">Events Reminder</string>
+    <string name="prefs_app_tourna_events_reminders">Set the time prior to the event that the reminder should fire.</string>
+    <string-array name="prefs_app_tourna_events_entries">
+        <item>None</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>1 day</item>
+        <item>1 week</item>
+    </string-array>
+    <string-array name="prefs_app_tourna_events_entries_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>1440</item>
+        <item>10080</item>
+    </string-array>
+
+    <!-- ICON LABELS -->
+    <string name="icon_label_copy">copy</string>
+    <string name="icon_label_share">share</string>
+    <string name="icon_label_star">star</string>
+    <string name="icon_label_unstar">unstar</string>
+    <string name="icon_label_hide">hide</string>
+    <string name="icon_label_unhide">show</string>
+
+    <string-array name="spinner_month_array">
+        <item>This week</item>
+        <item>Completed</item>
+        <item>All months</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+    </string-array>
+
+    <string-array name="spinner_month_array_short">
+        <item>This Week</item>
+        <item>Completed</item>
+        <item>All Months</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+    </string-array>
+
+    <string-array name="spinner_month_array_480dp">
+        <item>This week</item>
+        <item>Completed</item>
+        <item>All months</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+    </string-array>
+</resources>

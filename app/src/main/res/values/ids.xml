@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="playerPhoto" type="id"/>
+    <item name="tournaFlag" type="id"/>
+
+</resources>

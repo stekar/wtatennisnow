@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentNews"
+    tools:context=".MainActivity$PlaceholderFragment"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:id="@+id/newsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerNewsRecent"
+            android:text="@string/news_header_recent"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/news_tab_foreground"
+            android:background="@color/news_tab_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerNewsAll"
+            android:text="@string/news_header_all"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/news_tab_foreground_unselected"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerNewsStar"
+            android:text="@string/news_header_starred"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:textColor="@color/news_tab_foreground_unselected"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerNewsHide"
+            android:text="@string/news_header_hidden"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:textColor="@color/news_tab_foreground_unselected"
+            />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/headerNewsShare"
+            android:text="@string/news_header_shared"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/news_tab_foreground_unselected"
+            />-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/newsHeader"
+        android:background="#2196F3"
+        android:visibility="visible"
+        android:elevation="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="0dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$ScheduleFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_schedule" />
+
+    <LinearLayout
+        android:id="@+id/tournaSpinnerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="0dp"
+        android:background="@color/tourna_tab_background"
+        android:layout_below="@id/toolbar"
+        >
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:prompt="@string/schedule_spinner_title"
+        android:entries="@array/spinner_month_array"
+        android:layout_weight="1"
+        android:spinnerMode="dialog"
+        android:theme="@style/AppThemeSchedule"
+        android:paddingLeft="10dp"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tournaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tournaSpinnerHeader"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/headerAll"
+            android:text="@string/schedule_tourna_header_all"
+            android:layout_weight="1"
+            android:layout_marginLeft="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/tourna_tab_foreground"
+            android:background="@color/tourna_tab_background"
+            android:layout_marginTop="0dp"/>
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:id="@+id/headerGrandSlams"
+            android:text="@string/schedule_tourna_header_grand_slam"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/tourna_tab_foreground_unselected"
+            android:layout_marginTop="0dp"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/headerMasters1000"
+            android:text="@string/schedule_tourna_header_masters1000"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/tourna_tab_foreground_unselected"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/headerStar"
+            android:text="@string/schedule_tourna_header_starred"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/tourna_tab_foreground_unselected"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/spinnerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/tournaHeader"
+        android:background="#489636"
+        android:visibility="visible"
+        android:elevation="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewSchedule"
+        android:layout_below="@id/spinnerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

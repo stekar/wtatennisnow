@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tournaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TournaName"
+            android:textSize="30sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#5b914f"/>
+
+        <TextView
+            android:id="@+id/tournaWinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TournaWinner"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/tournaName"
+            />
+
+        <View
+            android:id="@+id/tournaInfoDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tournaFlag"
+            android:layout_below="@id/tournaWinner"
+            android:background="#e7e7e7"
+            android:visibility="visible"/>
+
+        <!-- Player Photo -->
+        <ImageView
+            android:id="@id/tournaFlag"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/tournaWinner"
+            android:src="@drawable/map_brisbane_australia"
+            />
+
+        <Button
+            android:id="@+id/tournaWebSite"
+            android:layout_width="129dp"
+            android:layout_height="40dp"
+            android:text="@string/schedule_tourna_site"
+            android:textColor="#438236"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@id/tournaFlag"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/tournaEventAction"
+            android:layout_width="129dp"
+            android:layout_height="40dp"
+            android:text="@string/schedule_tourna_event_add"
+            android:textColor="#438236"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@id/tournaWebSite"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_calendar"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tournaHeader"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tournaFlag"
+            android:layout_below="@id/tournaInfoDivider"
+            android:background="#e7efe5"
+            >
+
+            <TextView
+                android:id="@+id/tournaPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TournaPoints"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/tournaInfoLayout"
+            android:layout_below="@id/tournaHeader"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tournaFlag"
+            >
+
+            <TextView
+                android:id="@+id/tournaDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TournaDay"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                />
+
+            <View
+                android:id="@+id/tournaDivider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tournaDayEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TournaDayEnd"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                />
+
+            <View
+                android:id="@+id/tournaDivider1a"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tournaPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TournaPlace"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                />
+
+            <View
+                android:id="@+id/tournaDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tournaSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TournaSurface"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                />
+
+            <View
+                android:id="@+id/tournaDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+
+            <!-- SHARE BAR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/tournasLayoutShareBar"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                >
+
+                <ImageView
+                    android:id="@+id/tournasButtonCopy"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/selector_bar_action_copy_tourna"
+                    />
+
+                <ImageView
+                    android:id="@+id/tournasButtonShare"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/selector_bar_action_share_tourna"
+                    />
+
+                <ImageView
+                    android:id="@+id/tournasButtonStar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/selector_bar_action_star_tourna"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

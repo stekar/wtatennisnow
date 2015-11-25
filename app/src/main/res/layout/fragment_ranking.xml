@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragmentRanking">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_ranking" />
+
+    <LinearLayout
+        android:id="@+id/rankingHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerRankingTopPlayers"
+            android:text="@string/ranking_header_top_players"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/ranking_tab_foreground"
+            android:background="@color/ranking_tab_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerRankingTitlesYtdPlayers"
+            android:text="@string/ranking_header_titles_ytd_players"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/ranking_tab_foreground_unselected"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/headerRankingAllPlayers"
+            android:text="@string/ranking_header_all_players"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/ranking_tab_foreground_unselected"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/rankingHeader"
+        android:background="#f68232"
+        android:visibility="visible"
+        android:elevation="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewRanking"
+        android:layout_below="@id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

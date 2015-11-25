@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerCard">
+
+        <TextView
+            android:id="@+id/playerTotalPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="playerRank"
+            android:textSize="30sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#bdb283"/>
+
+        <View
+            android:id="@+id/playerInfoDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/playerPhoto"
+            android:layout_below="@id/playerTotalPoints"
+            android:background="#e7e7e7"
+            android:visibility="visible"/>
+
+        <!-- Player Photo -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@id/playerPhoto"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@id/playerTotalPoints"
+            />
+        <Button
+            android:id="@+id/playerFullProfileSite"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/ranking_player_profile"
+            android:textColor="#f68232"
+            android:layout_below="@id/playerPhoto"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/playerOfficialSite"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-5dp"
+            android:text="@string/ranking_player_site"
+            android:textColor="#f68232"
+            android:textAllCaps="false"
+            android:layout_below="@id/playerFullProfileSite"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerFullNameLayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/playerPhoto"
+            android:layout_below="@id/playerInfoDivider"
+            android:background="#f9f2e6"
+            >
+
+            <TextView
+                android:id="@+id/playerLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PlayerLastName"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/playerFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PlayerFirstName"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/playerRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="playerRank"
+                android:textSize="20sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <!-- POINTS/TOURNAMENT LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/playerPointsLayout"
+            android:layout_below="@id/playerFullNameLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/playerPhoto"
+            >
+
+            <TextView
+                android:id="@+id/playerAgeAndBirthplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ranking_player_age_birthplace"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                />
+
+            <!-- HEADING BEGIN -->
+            <View
+                android:id="@+id/playerYTDDividerBegin"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/playerDataLayoutHeadingLandscape">
+
+                <TextView
+                    android:id="@+id/playerYTDHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ranking_ytd_heading"
+                    android:textStyle="italic|bold"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="#f68232"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/playerCareerHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ranking_career_heading"
+                    android:textStyle="italic|bold"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="#f68232"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="148dp"
+                    />
+
+                <TextView
+                    android:id="@+id/playerRankHighBegin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="("
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/playerRankHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerRankHigh"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/playerRankHighEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/playerCareerDividerEnd"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:background="#e7e7e7"
+                android:visibility="visible"/>
+            <!-- HEADING END -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/playerYTDCareerLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/playerYTDLayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:id="@+id/playerTitlesYTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerTitles"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerTitlesYTDDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerSlamTitlesYTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerSlamTitlesYTD"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerFullNameDividerBegin"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerMasters1000TitlesYTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerMasters1000TitlesYTD"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerFullNameDividerEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <!--<TextView
+                    android:id="@+id/playerTournas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerTournas"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />-->
+
+                <View
+                    android:id="@+id/playerPrizeMoneyDividerBegin"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerPrizeMoneyCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerPrizeMoneyCurrent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/playerCareerLayout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/playerTitlesCareer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerTitlesCareer"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerRankHighDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerSlamTitlesCareer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerSlamTitlesCareer"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerSlamTitlesCareerDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerMasters1000TitlesCareer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerMasters1000TitlesYTD"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+
+                <View
+                    android:id="@+id/playerMasters1000TitlesCareerDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <!--<TextView
+                    android:id="@+id/playerTournasCareer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    />-->
+
+                <View
+                    android:id="@+id/playerTournasCareerCareerDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="#f9f2e6"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/playerPrizeMoneyTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playerPrizeMoneyTotal"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/playerCard"
+            android:background="#f68232"
+            android:visibility="visible"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/playerNewsShowHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking_news_hide"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#f68232"
+            android:layout_below="@id/viewDivider"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgNewsShowHide"
+            android:layout_below="@id/viewDivider"
+            android:layout_toRightOf="@id/playerNewsShowHide"
+            android:src="@drawable/ic_action_arrow_up"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llNewstitlesLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            android:layout_below="@id/playerNewsShowHide"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="news_today_card_background">#ffe4f2fd</color>
+    <color name="news_status_bar_color">#ff1976D2</color>
+    <color name="news_today_background">#ff1d87da</color>
+    <color name="news_yesterday_background">#ff37a0f4</color>
+    <color name="news_two_day_background">#ff63b5f6</color>
+    <color name="news_three_day_background">#ff90caf9</color>
+    <color name="news_rest_of_week_background">#ffbcdffb</color>
+    <color name="news_view_fetch_background">#ff1976D2</color>
+    <color name="news_tab_background">#ffe4f2fd</color>
+    <color name="news_tab_foreground">#ff1976D2</color>
+    <color name="news_tab_foreground_unselected">#ff63b5f6</color>
+
+    <color name="ranking_today_card_background">#fffde5d5</color>
+    <color name="ranking_status_bar_color">#fff46300</color>
+    <color name="ranking_view_fetch_background">#fffcdfcc</color>
+    <color name="ranking_tab_background">#fff9f2e6</color>
+    <color name="ranking_tab_foreground">#ffdb5900</color>
+    <color name="ranking_tab_foreground_unselected">#fff8a166</color>
+
+    <color name="tourna_today_card_background">#7eb572</color>
+    <color name="tourna_status_bar_color">#ff156304</color>
+    <color name="tourna_tab_background">#ffe7efe5</color>
+    <color name="tourna_tab_foreground">#ff156304</color>
+    <color name="tourna_tab_foreground_unselected">#ff7eb572</color>
+
+    <color name="reachability_view_fetch_background">#ffffffff</color>
+    <color name="schedule_view_fetch_background">#ff156304</color>
+
+    <color name="news_shape_oval_stroke">#ff878786</color>
+    <color name="news_shape_oval_stroke_selected">@color/news_tab_foreground</color>
+    <color name="news_shape_oval_fill">#ffffff</color>
+    <color name="news_shape_oval_fill_selected">@color/news_tab_background</color>
+
+    <color name="tourna_shape_oval_stroke">#ff878786</color>
+    <color name="tourna_shape_oval_stroke_selected">@color/tourna_tab_foreground</color>
+    <color name="tourna_shape_oval_fill">#ffffff</color>
+    <color name="tourna_shape_oval_fill_selected">@color/tourna_tab_background</color>
+</resources>
