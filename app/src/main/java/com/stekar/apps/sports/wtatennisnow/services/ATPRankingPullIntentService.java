@@ -20,7 +20,7 @@ import java.io.IOException;
  * helper methods.
  */
 public class ATPRankingPullIntentService extends IntentService {
-    public static final String ACTION_DOWNLOAD_RANKING_FEED = "com.stekar.apps.sports.tennisnow.services.action.download";
+    public static final String ACTION_DOWNLOAD_RANKING_FEED = "com.stekar.apps.sports.wtatennisnow.services.action.download";
     // The URL of the ATP News Feed featured picture RSS feed, in String format
     public static final String DOWNLOAD_RANKING_FEED_URL =
             "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1ISOeLDfrUynUZyDI2zm9gDKJROIx3-zV0yRw34WqxPc";

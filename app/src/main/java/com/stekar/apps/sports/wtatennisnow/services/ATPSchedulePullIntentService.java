@@ -30,7 +30,7 @@ import java.util.ArrayList;
  * Created by stekar on 12/25/14.
  */
 public class ATPSchedulePullIntentService extends IntentService {
-    public static final String ACTION_DOWNLOAD_SCHEDULE_FEED = "com.stekar.apps.sports.tennisnow.services.action.download";
+    public static final String ACTION_DOWNLOAD_SCHEDULE_FEED = "com.stekar.apps.sports.wtatennisnow.services.action.download";
     // The URL of the ATP News Feed featured picture RSS feed, in String format
     public static final String DOWNLOAD_SCHEDULE_FEED_URL =
             "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=15n19h4xhfLxp6Uva3NWTU_eQnA2u6V7AcJJDnIyPLIY";

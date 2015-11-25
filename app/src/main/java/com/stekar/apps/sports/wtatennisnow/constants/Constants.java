@@ -18,15 +18,15 @@ public final class Constants {
     public static final String ACTION_NOTIFICATION = "ACTION_NOTIFICATION";
 
     // Defines a custom Intent action
-    public static final String BROADCAST_RANKING_PARSED = "com.stekar.apps.sports.tennisnow.broadcast.ranking.parsed";
-    public static final String BROADCAST_RANKING_CURSOR_LOADER_READY = "com.stekar.apps.sports.tennisnow.broadcast.ranking.cursor.loader.ready";
-    public static final String BROADCAST_RANKING_READY = "com.stekar.apps.sports.tennisnow.broadcast.ranking.ready";
-    public static final String BROADCAST_NEWS_PARSED = "com.stekar.apps.sports.tennisnow.broadcast.news.parsed";
-    public static final String BROADCAST_NEWS_READY = "com.stekar.apps.sports.tennisnow.broadcast.news.ready";
-    public static final String BROADCAST_NEWS_CURSOR_LOADER_READY = "com.stekar.apps.sports.tennisnow.broadcast.news.cursor.loader.ready";
-    public static final String BROADCAST_SCHEDULE_PARSED = "com.stekar.apps.sports.tennisnow.broadcast.schedule.parsed";
-    public static final String BROADCAST_SCHEDULE_READY = "com.stekar.apps.sports.tennisnow.broadcast.schedule.ready";
-    public static final String BROADCAST_SCHEDULE_CURSOR_LOADER_READY = "com.stekar.apps.sports.tennisnow.broadcast.schedule.cursor.loader.ready";
+    public static final String BROADCAST_RANKING_PARSED = "com.stekar.apps.sports.wtatennisnow.broadcast.ranking.parsed";
+    public static final String BROADCAST_RANKING_CURSOR_LOADER_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.ranking.cursor.loader.ready";
+    public static final String BROADCAST_RANKING_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.ranking.ready";
+    public static final String BROADCAST_NEWS_PARSED = "com.stekar.apps.sports.wtatennisnow.broadcast.news.parsed";
+    public static final String BROADCAST_NEWS_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.news.ready";
+    public static final String BROADCAST_NEWS_CURSOR_LOADER_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.news.cursor.loader.ready";
+    public static final String BROADCAST_SCHEDULE_PARSED = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.parsed";
+    public static final String BROADCAST_SCHEDULE_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.ready";
+    public static final String BROADCAST_SCHEDULE_CURSOR_LOADER_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.cursor.loader.ready";
     public static final String RANKING_ALL_PLAYERS_SITE_URL = "http://www.atpworldtour.com/Rankings/Singles.aspx";
 
     // External Web Sites

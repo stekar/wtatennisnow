@@ -33,7 +33,7 @@ import com.stekar.apps.sports.wtatennisnow.accounts.GenericAccountService;
 public class SyncUtils {
     private static final String TAG = "TENNISNOW_SYNC_UTILS";
     private static final long SYNC_FREQUENCY = 1 * 60 * 60;//60 * 60;  // 1 hour (in seconds)
-    private static final String CONTENT_AUTHORITY = "com.stekar.apps.sports.tennisnow.sync";
+    private static final String CONTENT_AUTHORITY = "com.stekar.apps.sports.wtatennisnow.sync";
     private static final String PREF_SETUP_COMPLETE = "setup_complete";
     /**
      * Create an entry for this application in the system account list, if it isn't already there.

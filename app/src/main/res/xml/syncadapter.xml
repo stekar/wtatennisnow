@@ -16,8 +16,8 @@ limitations under the License.
 -->
 
 <sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
-              android:contentAuthority="com.stekar.apps.sports.tennisnow.sync"
-              android:accountType="com.stekar.apps.sports.tennisnow.sync"
+              android:contentAuthority="com.stekar.apps.sports.wtatennisnow.sync"
+              android:accountType="com.stekar.apps.sports.wtatennisnow.sync"
               android:userVisible="false"
               android:supportsUploading="false"
               android:allowParallelSyncs="false"

@@ -35,7 +35,7 @@ public class PlaceholderFragmentNews extends Fragment implements LoaderManager.L
     // Denotes if the GridView has been loaded
     private boolean mIsLoaded;
     private static final String STATE_IS_HIDDEN =
-            "com.stekar.apps.sports.tennisnow.STATE_IS_HIDDEN";
+            "com.stekar.apps.sports.wtatennisnow.STATE_IS_HIDDEN";
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;

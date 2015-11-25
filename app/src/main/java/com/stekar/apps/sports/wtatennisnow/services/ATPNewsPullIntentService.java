@@ -40,7 +40,7 @@ public class ATPNewsPullIntentService extends IntentService {
     private List<ATPNews> mNewNews;
     private static final String TAG = "TENNISNOW_ATPNNEWSPULLINTENTSERVICE";
 
-    public static final String ACTION_DOWNLOAD_NEWS_FEED = "com.stekar.apps.sports.tennisnow.services.action.download";
+    public static final String ACTION_DOWNLOAD_NEWS_FEED = "com.stekar.apps.sports.wtatennisnow.services.action.download";
     // The URL of the ATP News Feed featured picture RSS feed, in String format
     public static final String DOWNLOAD_NEWS_FEED_URL =
             "http://www.atpworldtour.com/en/media/rss-feed/xml-feed";
