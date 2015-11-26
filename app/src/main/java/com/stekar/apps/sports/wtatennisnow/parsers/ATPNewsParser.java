@@ -53,7 +53,7 @@ public class ATPNewsParser {
         String pubDate = null;
         String link = null;
         String desc = null;
-
+        String cover = null;
 
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -62,13 +62,15 @@ public class ATPNewsParser {
             String tagName = parser.getName();
             if (tagName.equals("title")) {
                 title = readTitle(parser);
-            } else if (tagName.equals("pubDate")) {
+            } else if (tagName.equals("publishedDate")) {
                 pubDate = readPubDate(parser);
             } else if (tagName.equals("link")) {
                 link = readLink(parser);
             } else if(tagName.equals("description")) {
                 desc = readDescription(parser);
-            } else {
+            } else if(tagName.equals("teaserImage")) {
+                cover = readCover(parser);
+        }   else {
                 skip(parser);
             }
         }
@@ -78,20 +80,21 @@ public class ATPNewsParser {
         newsItem.setPubDate(pubDate);
         newsItem.setLink(link);
         newsItem.setDescription(desc);
+        newsItem.setCover(cover);
         // set-up the share send intent data
         StringBuilder sb = new StringBuilder();
         sb.append(newsItem.getPubDateMonth());
         sb.append(" ");
         sb.append(newsItem.getPubDateNumber());
         sb.append(". ");
-        sb.append("ATP News: ");
+        sb.append("WTA News: ");
         sb.append(newsItem.getTitle());
         sb.append("\n");
         sb.append(newsItem.getLink());
         newsItem.setNewsShare(sb.toString());
 
-        String cover = this.playerPhotoForNewsTitle(title, mapPlayers);
-        newsItem.setCover(cover);
+        //String cover = this.playerPhotoForNewsTitle(title, mapPlayers);
+        //newsItem.setCover(cover);
 
         boolean isRowUpdated = AppSqlHelper.getInstance(AppController.getInstance().getAppContext()).getATPNewsHelper().updateNewsItemCover(newsItem);
         if(isRowUpdated == false) {
@@ -200,9 +203,9 @@ public class ATPNewsParser {
 
     // Processes date tags in the feed.
     private String readPubDate(XmlPullParser parser) throws IOException, XmlPullParserException {
-        parser.require(XmlPullParser.START_TAG, ns, "pubDate");
+        parser.require(XmlPullParser.START_TAG, ns, "publishedDate");
         String pubDate = readText(parser);
-        parser.require(XmlPullParser.END_TAG, ns, "pubDate");
+        parser.require(XmlPullParser.END_TAG, ns, "publishedDate");
         return pubDate;
     }
 
@@ -237,6 +240,14 @@ public class ATPNewsParser {
             parser.nextTag();
         }
         return result;
+    }
+
+    // For the tags description, extracts their text values.
+    private String readCover(XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, ns, "teaserImage");
+        String cover = "http://www.wtatennis.com" + readText(parser).trim();
+        parser.require(XmlPullParser.END_TAG, ns, "teaserImage");
+        return cover.trim();
     }
 
     // Skips tags the parser isn't interested in. Uses depth to handle nested tags. i.e.,

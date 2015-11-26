@@ -156,17 +156,17 @@ public class ATPNews {
                     String[] pubDateSplit = pubDate.split(",");
                     if (pubDateSplit != null && pubDateSplit.length == 2) {
                         mPubDateDay = pubDateSplit[0];
-                        String[] pubDateRightSplit = pubDateSplit[1].split(" ");
-                        if (pubDateRightSplit != null && pubDateRightSplit.length > 4) {
+                        String[] pubDateRightSplit = pubDateSplit[0].split(" ");
+                        if (pubDateRightSplit != null && pubDateRightSplit.length > 2) {
                             mPubDateNumber = pubDateRightSplit[1];
-                            mPubDateMonth = pubDateRightSplit[2];
-                            mPubDateYear = pubDateRightSplit[3];
+                            mPubDateMonth = pubDateRightSplit[0];
+                            mPubDateYear = pubDateRightSplit[2];
 
-                            String[] timeSplit = pubDateRightSplit[4].split(":");
-                            if(timeSplit != null && timeSplit.length > 2) {
-                                mPubDateHr = timeSplit[0];
+                            String[] timeSplit = pubDateSplit[1].split(":");
+                            if(timeSplit != null && timeSplit.length > 1) {
+                                mPubDateHr = timeSplit[0].trim();
                                 mPubDateMin = timeSplit[1];
-                                mPubDateSec = timeSplit[2];
+                                mPubDateSec = "0";
                             }
                         }
                     }

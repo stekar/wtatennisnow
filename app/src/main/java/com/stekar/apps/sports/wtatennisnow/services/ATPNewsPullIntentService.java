@@ -38,13 +38,12 @@ public class ATPNewsPullIntentService extends IntentService {
     private boolean mShouldFireNotification;
     private boolean mIsManualRefresh;
     private List<ATPNews> mNewNews;
-    private static final String TAG = "TENNISNOW_ATPNNEWSPULLINTENTSERVICE";
+    private static final String TAG = "WTATENNISNOW_ATPNNEWSPULLINTENTSERVICE";
 
     public static final String ACTION_DOWNLOAD_NEWS_FEED = "com.stekar.apps.sports.wtatennisnow.services.action.download";
     // The URL of the ATP News Feed featured picture RSS feed, in String format
     public static final String DOWNLOAD_NEWS_FEED_URL =
-            "http://www.atpworldtour.com/en/media/rss-feed/xml-feed";
-            //"http://feeds.feedburner.com/Tennis-AtpWorldTourHeadlineNews?format=xml";
+            "http://www.wtatennis.com/feed.rss/category/12009823,12010172/limit/25/page/news/request/article";
 
     public ATPNewsPullIntentService() {
         super("ATPNewsPullIntentService");
