@@ -27,7 +27,7 @@ public final class Constants {
     public static final String BROADCAST_SCHEDULE_PARSED = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.parsed";
     public static final String BROADCAST_SCHEDULE_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.ready";
     public static final String BROADCAST_SCHEDULE_CURSOR_LOADER_READY = "com.stekar.apps.sports.wtatennisnow.broadcast.schedule.cursor.loader.ready";
-    public static final String RANKING_ALL_PLAYERS_SITE_URL = "http://www.atpworldtour.com/Rankings/Singles.aspx";
+    public static final String RANKING_ALL_PLAYERS_SITE_URL = "http://www.wtatennis.com/singles-rankings";
 
     // External Web Sites
     public static final String ICONS4ANDROID_SITE_URL = "http://www.icons4android.com";

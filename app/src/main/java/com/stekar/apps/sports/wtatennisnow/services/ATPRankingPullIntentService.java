@@ -23,8 +23,8 @@ public class ATPRankingPullIntentService extends IntentService {
     public static final String ACTION_DOWNLOAD_RANKING_FEED = "com.stekar.apps.sports.wtatennisnow.services.action.download";
     // The URL of the ATP News Feed featured picture RSS feed, in String format
     public static final String DOWNLOAD_RANKING_FEED_URL =
-            "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1ISOeLDfrUynUZyDI2zm9gDKJROIx3-zV0yRw34WqxPc";
-
+            //"https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1ISOeLDfrUynUZyDI2zm9gDKJROIx3-zV0yRw34WqxPc";
+            "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1nHTNgQ89qqsYPZxgifjRrIU1fHW9GBilsCv1123I2-s";
     public ATPRankingPullIntentService() {
         super("ATPRankingPullIntentService");
     }

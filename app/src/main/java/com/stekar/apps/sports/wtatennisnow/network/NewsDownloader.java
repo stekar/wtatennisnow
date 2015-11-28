@@ -89,15 +89,15 @@ public class NewsDownloader {
                 xmlStringToParse = this.downloadATPNewsFeed(urlString);
                 if(xmlStringToParse != null) {
                     // Download the players photos
-                    /*String url = "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1HMw4yuZvdiLKTjGSNOE0VvhngEZmy9_8vKTDzuvs_N4";
+                    String url = "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1X0VBxVNcWCwN5Z77T0ll-I5TwdABRnguEu8zN5RQ-ds";
                     String jsonPlayersString =this.downloadATPPlayers(url);
                     Gson gson = new Gson();
                     java.lang.reflect.Type stringStringMap = new TypeToken<Map<String, String>>(){}.getType();
-                    Map<String,String> mapPlayers = gson.fromJson(jsonPlayersString, stringStringMap);*/
+                    Map<String,String> mapPlayers = gson.fromJson(jsonPlayersString, stringStringMap);
 
                     // Parse the ATP News Feed and insert into the Database
                     ATPNewsParser newsParser = new ATPNewsParser();
-                    newsParser.parse(new StringReader(xmlStringToParse), null, newNews);
+                    newsParser.parse(new StringReader(xmlStringToParse), mapPlayers, newNews);
                     FileUtils.saveDownloadTimestampToPrefs(PrefsConstants.PREFS_NEWS_LAST_FETCH_MILLIS);
                 }
 

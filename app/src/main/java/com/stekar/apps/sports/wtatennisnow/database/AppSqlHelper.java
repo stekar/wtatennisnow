@@ -76,6 +76,7 @@ public class AppSqlHelper extends SQLiteOpenHelper {
             int hashedTitle = title.toLowerCase().hashCode();*/
             cv.put(AppDatabase.NewsDatabase.TITLE, newsItem.getTitle());
             cv.put(AppDatabase.NewsDatabase.COVER, newsItem.getCover());
+            cv.put(AppDatabase.NewsDatabase.PLAYER_PHOTO_URL, newsItem.getPlayerPhotoUrl());
             cv.put(AppDatabase.NewsDatabase.HASHED_TITLE, newsItem.getHashedTitle());
             cv.put(AppDatabase.NewsDatabase.DESCRIPTION, newsItem.getDescription());
             cv.put(AppDatabase.NewsDatabase.LINK, newsItem.getLink());
@@ -534,7 +535,7 @@ public class AppSqlHelper extends SQLiteOpenHelper {
                             " LEFT JOIN " +
                             AppDatabase.NewsDatabase.TABLE_NAME +
                             " ON " + AppDatabase.PlayerRankingDatabase.PHOTO_URL + " = " +
-                            AppDatabase.NewsDatabase.COVER +
+                            AppDatabase.NewsDatabase.PLAYER_PHOTO_URL +
                             AND +
                             " GROUP BY " +
                             AppDatabase.PlayerRankingDatabase.PLAYER_ID +

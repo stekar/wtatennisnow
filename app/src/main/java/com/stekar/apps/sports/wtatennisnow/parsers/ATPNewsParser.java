@@ -93,8 +93,8 @@ public class ATPNewsParser {
         sb.append(newsItem.getLink());
         newsItem.setNewsShare(sb.toString());
 
-        //String cover = this.playerPhotoForNewsTitle(title, mapPlayers);
-        //newsItem.setCover(cover);
+        String playerPhotoUrl = this.playerPhotoForNewsTitle(title, mapPlayers);
+        newsItem.setPlayerPhotoUrl(playerPhotoUrl);
 
         boolean isRowUpdated = AppSqlHelper.getInstance(AppController.getInstance().getAppContext()).getATPNewsHelper().updateNewsItemCover(newsItem);
         if(isRowUpdated == false) {

@@ -23,6 +23,7 @@ public final class AppDatabase {
         public static final String PUB_DATE_DAYS_OF_YEAR = "pubdatedaysofyear";
         public static final String TITLE = "title";
         public static final String COVER = "titlecover";
+        public static final String PLAYER_PHOTO_URL = "playerphotourl";
         public static final String HASHED_TITLE = "hashedtitle";
         public static final String DESCRIPTION = "description";
         public static final String LINK = "link";
@@ -47,6 +48,7 @@ public final class AppDatabase {
             sb.append(NewsDatabase.PUB_DATE_DAYS_OF_YEAR).append(" INTEGER,");
             sb.append(NewsDatabase.TITLE).append(" TEXT,");
             sb.append(NewsDatabase.COVER).append(" TEXT,");
+            sb.append(NewsDatabase.PLAYER_PHOTO_URL).append(" TEXT,");
             sb.append(NewsDatabase.DESCRIPTION).append(" TEXT,");
             sb.append(NewsDatabase.LINK).append(" TEXT,");
             sb.append(NewsDatabase.SHARE_TEXT).append(" TEXT,");

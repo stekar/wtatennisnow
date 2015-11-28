@@ -29,6 +29,7 @@ public class ATPNews {
     private String mNewsShare;
     private String mDescription;
     private String mCover;
+    private String mPlayerPhotoUrl;
     private int mId;
     private boolean mIsPubDateToday;
     private boolean mIsPubDateYesterday;
@@ -307,5 +308,13 @@ public class ATPNews {
 
     public void setIsDeleted(boolean isDeleted) {
         mIsDeleted = isDeleted;
+    }
+
+    public String getPlayerPhotoUrl() {
+        return mPlayerPhotoUrl;
+    }
+
+    public void setPlayerPhotoUrl(String playerPhotoUrl) {
+        this.mPlayerPhotoUrl = playerPhotoUrl;
     }
 }
