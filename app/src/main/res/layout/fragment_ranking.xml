@@ -66,7 +66,7 @@
         android:layout_marginBottom="0dp"
         android:layout_marginTop="0dp"
         android:layout_below="@id/rankingHeader"
-        android:background="#f68232"
+        android:background="@color/ranking_tab_foreground_unselected"
         android:visibility="visible"
         android:elevation="3dp"/>
 

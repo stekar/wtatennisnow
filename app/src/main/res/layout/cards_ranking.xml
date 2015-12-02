@@ -28,7 +28,7 @@
             android:textSize="30sp"
             android:layout_marginTop="0dp"
             android:layout_marginLeft="2dp"
-            android:textColor="#bdb283"/>
+            android:textColor="@color/ranking_view_fetch_background"/>
 
             <View
                 android:id="@+id/playerInfoDivider"
@@ -59,7 +59,7 @@
             android:layout_width="120dp"
             android:layout_height="40dp"
             android:text="@string/ranking_player_profile"
-            android:textColor="#f68232"
+            android:textColor="@color/ranking_view_fetch_background"
             android:layout_below="@id/playerPhoto"
             android:textAllCaps="false"
             />
@@ -69,7 +69,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="-5dp"
             android:text="@string/ranking_player_site"
-            android:textColor="#f68232"
+            android:textColor="@color/ranking_view_fetch_background"
             android:textAllCaps="false"
             android:layout_below="@id/playerFullProfileSite"
             />
@@ -82,7 +82,7 @@
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/playerPhoto"
             android:layout_below="@id/playerInfoDivider"
-            android:background="#f9f2e6"
+            android:background="@color/ranking_player_fullname_background"
             >
 
             <TextView
@@ -167,8 +167,8 @@
                     android:textStyle="italic|bold"
                     android:gravity="center_vertical"
                     android:textSize="16sp"
-                    android:textColor="#f68232"
-                    android:background="#f9f2e6"
+                    android:textColor="@color/ranking_tab_foreground"
+                    android:background="@color/ranking_player_ytd_career_background"
                     android:layout_marginTop="0dp"
                     android:layout_marginLeft="0dp"
                     />
@@ -181,7 +181,7 @@
                     android:textStyle="italic|bold"
                     android:gravity="center_vertical"
                     android:textSize="16sp"
-                    android:textColor="#f9b484"
+                    android:textColor="@color/ranking_today_card_background"
                     android:layout_marginTop="0dp"
                     android:layout_marginLeft="80dp"
                     />
@@ -415,7 +415,7 @@
             android:layout_marginBottom="0dp"
             android:layout_marginTop="0dp"
             android:layout_below="@id/playerCard"
-            android:background="#f68232"
+            android:background="@color/ranking_tab_foreground_unselected"
             android:visibility="visible"
             android:elevation="2dp"/>
 
@@ -431,7 +431,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:textColor="#f68232"
+            android:textColor="@color/ranking_tab_foreground"
             android:layout_below="@id/viewDivider"
             />
 

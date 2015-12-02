@@ -269,12 +269,12 @@ public class ATPRankingCardsListAdapter extends RecyclerView.Adapter<ATPRankingC
                 @Override
                 public void onClick(View v) {
                     viewHolder.llCareerLayout.setVisibility(View.GONE);
-                    viewHolder.textPlayerCareerHeading.setTextColor(0xfff9b484);
+                    viewHolder.textPlayerCareerHeading.setTextColor(res.getColor(R.color.ranking_today_card_background));
                     viewHolder.textPlayerCareerHeading.setBackgroundColor(Color.WHITE);
 
                     viewHolder.llYTDLayout.setVisibility(View.VISIBLE);
-                    viewHolder.textPlayerYTDHeading.setTextColor(0xfff68232);
-                    viewHolder.textPlayerYTDHeading.setBackgroundColor(0xfff9f2e6);
+                    viewHolder.textPlayerYTDHeading.setTextColor(res.getColor(R.color.ranking_tab_foreground));
+                    viewHolder.textPlayerYTDHeading.setBackgroundColor(res.getColor(R.color.ranking_player_ytd_career_background));
 
                 }
             });
@@ -283,12 +283,12 @@ public class ATPRankingCardsListAdapter extends RecyclerView.Adapter<ATPRankingC
                 @Override
                 public void onClick(View v) {
                     viewHolder.llYTDLayout.setVisibility(View.GONE);
-                    viewHolder.textPlayerYTDHeading.setTextColor(0xfff9b484);
+                    viewHolder.textPlayerYTDHeading.setTextColor(res.getColor(R.color.ranking_today_card_background));
                     viewHolder.textPlayerYTDHeading.setBackgroundColor(Color.WHITE);
 
                     viewHolder.llCareerLayout.setVisibility(View.VISIBLE);
-                    viewHolder.textPlayerCareerHeading.setTextColor(0xfff68232);
-                    viewHolder.textPlayerCareerHeading.setBackgroundColor(0xfff9f2e6);
+                    viewHolder.textPlayerCareerHeading.setTextColor(res.getColor(R.color.ranking_tab_foreground));
+                    viewHolder.textPlayerCareerHeading.setBackgroundColor(res.getColor(R.color.ranking_player_ytd_career_background));
                 }
             });
         }

@@ -89,7 +89,7 @@
     <string name="prefs_app_notif_tournas_header">Tournament Updates</string>
     <string name="prefs_app_notif_tournas">Let me know when there are updated tournaments info.</string>
 
-    <string name="prefs_app_news_category">ATP NEWS</string>
+    <string name="prefs_app_news_category">WTA NEWS</string>
     <string name="prefs_app_news_deleted_clear_header">Deleted Headlines</string>
     <string name="prefs_app_news_deleted_clear_summary">Restore &lt;b>%1$s&lt;/b> deleted news.</string>
     <string name="prefs_app_news_deleted_clear_summary_empty">There are no deleted news.</string>
@@ -107,7 +107,7 @@
     <string name="prefs_app_news_deleteds_clear_success">%1$s deleted news are now restored, and visible.</string>
     <string name="prefs_app_news_deleted_clear_success">%1$s deleted news is now restored, and visible.</string>
 
-    <string name="prefs_app_tourna_category">ATP TOURNAMENTS</string>
+    <string name="prefs_app_tourna_category">WTA TOURNAMENTS</string>
     <string name="prefs_app_tourna_events_clear_success">%1$s events have been removed from your Google calendar.</string>
     <string name="prefs_app_tourna_event_clear_success">%1$s event has been removed from your Google calendar.</string>
     <string name="prefs_app_tourna_events_clear_header">Calendar Events</string>

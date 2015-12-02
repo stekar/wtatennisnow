@@ -91,7 +91,7 @@
         android:layout_marginBottom="0dp"
         android:layout_marginTop="0dp"
         android:layout_below="@id/newsHeader"
-        android:background="#2196F3"
+        android:background="#76469e"
         android:visibility="visible"
         android:elevation="3dp"/>
 

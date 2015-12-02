@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="news_today_card_background">#ffe4f2fd</color>
-    <color name="news_status_bar_color">#ff1976D2</color>
-    <color name="news_today_background">#ff1d87da</color>
-    <color name="news_yesterday_background">#ff37a0f4</color>
-    <color name="news_two_day_background">#ff63b5f6</color>
-    <color name="news_three_day_background">#ff90caf9</color>
-    <color name="news_rest_of_week_background">#ffbcdffb</color>
-    <color name="news_view_fetch_background">#ff1976D2</color>
-    <color name="news_tab_background">#ffe4f2fd</color>
-    <color name="news_tab_foreground">#ff1976D2</color>
-    <color name="news_tab_foreground_unselected">#ff63b5f6</color>
+    <color name="news_today_card_background">#ede7f2</color>
+    <color name="news_status_bar_color">#541886</color>
+    <color name="news_today_background">#76469e</color>
+    <color name="news_yesterday_background">#9874b6</color>
+    <color name="news_two_day_background">#baa2ce</color>
+    <color name="news_three_day_background">#dcd0e6</color>
+    <color name="news_rest_of_week_background">#ede7f2</color>
+    <color name="news_view_fetch_background">#652f92</color>
+    <color name="news_tab_background">#ede7f2</color>
+    <color name="news_tab_foreground">#541886</color>
+    <color name="news_tab_foreground_unselected">#9874b6</color>
 
-    <color name="ranking_today_card_background">#fffde5d5</color>
-    <color name="ranking_status_bar_color">#fff46300</color>
-    <color name="ranking_view_fetch_background">#fffcdfcc</color>
-    <color name="ranking_tab_background">#fff9f2e6</color>
-    <color name="ranking_tab_foreground">#ffdb5900</color>
-    <color name="ranking_tab_foreground_unselected">#fff8a166</color>
+    <color name="ranking_today_card_background">#e6ccd7</color>
+    <color name="ranking_status_bar_color">#750035</color>
+    <color name="ranking_view_fetch_background">#8e194e</color>
+    <color name="ranking_tab_background">#e6ccd7</color>
+    <color name="ranking_tab_foreground">#750035</color>
+    <color name="ranking_tab_foreground_unselected">#b46689</color>
+    <color name="ranking_player_fullname_background">#f2e5eb</color>
+    <color name="ranking_player_ytd_career_background">#f2e5eb</color>
 
     <color name="tourna_today_card_background">#7eb572</color>
     <color name="tourna_status_bar_color">#ff156304</color>
