@@ -225,7 +225,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -245,7 +245,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -259,33 +259,13 @@
                 android:layout_marginLeft="0dp"
                 />
 
-            <!--<View
-                android:id="@+id/playerFullNameDividerEnd"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
-                android:visibility="visible"/>-->
-
-            <!--<TextView
-                android:id="@+id/playerTournas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="playerTournas"
-                android:gravity="center_vertical"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="0dp"
-                />-->
-
             <View
                 android:id="@+id/playerPrizeMoneyDividerBegin"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -328,7 +308,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -348,7 +328,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -368,7 +348,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView
@@ -388,7 +368,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="0dp"
-                android:background="#f9f2e6"
+                android:background="@color/ranking_divider"
                 android:visibility="visible"/>
 
             <TextView

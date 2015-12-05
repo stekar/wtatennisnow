@@ -20,12 +20,14 @@
     <color name="ranking_tab_foreground_unselected">#b46689</color>
     <color name="ranking_player_fullname_background">#f2e5eb</color>
     <color name="ranking_player_ytd_career_background">#f2e5eb</color>
+    <color name="ranking_divider">#f2e5eb</color>
 
-    <color name="tourna_today_card_background">#7eb572</color>
-    <color name="tourna_status_bar_color">#ff156304</color>
-    <color name="tourna_tab_background">#ffe7efe5</color>
-    <color name="tourna_tab_foreground">#ff156304</color>
-    <color name="tourna_tab_foreground_unselected">#ff7eb572</color>
+
+    <color name="tourna_today_card_background">#f4cde0</color>
+    <color name="tourna_status_bar_color">#8d0447</color>
+    <color name="tourna_tab_background">#f4cde0</color>
+    <color name="tourna_tab_foreground">#8d0447</color>
+    <color name="tourna_tab_foreground_unselected">#df6aa3</color>
 
     <color name="reachability_view_fetch_background">#ffffffff</color>
     <color name="schedule_view_fetch_background">#ff156304</color>
