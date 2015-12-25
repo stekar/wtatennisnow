@@ -182,9 +182,9 @@ public class ATPScheduleCardsListAdapter extends RecyclerView.Adapter<ATPSchedul
         if(isSlam == true) {
             viewHolder.textTournaPoints.setText(mRes.getString(R.string.schedule_tourna_grand_slam));
         } else {
-            boolean isMasters1000 = Boolean.valueOf(atpSchedule.getTournaMaster());
+            boolean isMasters1000 = Boolean.valueOf(atpSchedule.getTournaPremier());
             if(isMasters1000 == true) {
-                viewHolder.textTournaPoints.setText(R.string.schedule_tourna_masters_1000);
+                viewHolder.textTournaPoints.setText(R.string.schedule_tourna_premier);
             } else {
                 String tournaPoints = String.format(mRes.getString(R.string.schedule_tourna_points), atpSchedule.getTournaPoints());
                 CharSequence styledTournaPoints = Html.fromHtml(tournaPoints);

@@ -56,7 +56,7 @@ public class ATPScheduleDownloader {
 
             if(scheduleItem.getTournaSlam() == true) {
                 scheduleItem.setTournaWeekEnd(week + 1);
-            } else if(scheduleItem.getTournaMaster() == true) {
+            } else if(scheduleItem.getTournaPremier() == true) {
                 if(week == 11 || week == 13) {
                     scheduleItem.setTournaWeekEnd(week + 1);
                 } else {

@@ -66,8 +66,8 @@ public class ATPTournasCursor extends CursorWrapper {
         String isSlam = getString(getColumnIndex(AppDatabase.TournasDatabase.IS_SLAM));
         tournaItem.setTournaSlam(BooleanUtils.ordinalToBoolean(isSlam));
 
-        String isMasters = getString(getColumnIndex(AppDatabase.TournasDatabase.IS_MASTERS1000));
-        tournaItem.setTournaMaster(BooleanUtils.ordinalToBoolean(isMasters));
+        String isMasters = getString(getColumnIndex(AppDatabase.TournasDatabase.IS_PREMIER));
+        tournaItem.setTournaPremier(BooleanUtils.ordinalToBoolean(isMasters));
 
         String isShared = getString(getColumnIndex(AppDatabase.TournasDatabase.IS_SHARED));
         tournaItem.setIsShared(BooleanUtils.ordinalToBoolean(isShared));

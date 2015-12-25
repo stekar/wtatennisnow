@@ -214,11 +214,11 @@ public class ATPRankingCardsListAdapter extends RecyclerView.Adapter<ATPRankingC
         CharSequence styledPlayerSlamTitlesCareer = Html.fromHtml(playerSlamTitlesCareer);
         viewHolder.textPlayerSlamTitlesCareer.setText(styledPlayerSlamTitlesCareer);
 
-        String playerMasters1000TitlesYTD = String.format(res.getString(R.string.ranking_player_titles_masters1000_ytd), atpRanking.getPlayerMasters1000TitlesYTD());
+        String playerMasters1000TitlesYTD = String.format(res.getString(R.string.ranking_player_titles_premier_ytd), atpRanking.getPlayerMasters1000TitlesYTD());
         CharSequence styledPlayerMasters1000TitlesYTD = Html.fromHtml(playerMasters1000TitlesYTD);
         viewHolder.textPlayerMasters1000TitlesYTD.setText(styledPlayerMasters1000TitlesYTD);
 
-        String playerMasters1000TitlesCareer = String.format(res.getString(R.string.ranking_player_titles_masters1000_career), atpRanking.getPlayerMasters1000TitlesCareer());
+        String playerMasters1000TitlesCareer = String.format(res.getString(R.string.ranking_player_titles_premier_career), atpRanking.getPlayerMasters1000TitlesCareer());
         CharSequence styledPlayerMasters1000TitlesCareer = Html.fromHtml(playerMasters1000TitlesCareer);
         viewHolder.textPlayerMasters1000TitlesCareer.setText(styledPlayerMasters1000TitlesCareer);
         // TITLES - END

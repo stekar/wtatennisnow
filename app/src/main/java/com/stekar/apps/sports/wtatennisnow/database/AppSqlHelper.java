@@ -302,7 +302,7 @@ public class AppSqlHelper extends SQLiteOpenHelper {
             cv.put(AppDatabase.TournasDatabase.COUNTRY, tournaItem.getTournaCountry());
             cv.put(AppDatabase.TournasDatabase.SURFACE, tournaItem.getTournaSurface());
             cv.put(AppDatabase.TournasDatabase.IS_SLAM, tournaItem.getTournaSlam());
-            cv.put(AppDatabase.TournasDatabase.IS_MASTERS1000, tournaItem.getTournaMaster());
+            cv.put(AppDatabase.TournasDatabase.IS_PREMIER, tournaItem.getTournaPremier());
             cv.put(AppDatabase.TournasDatabase.LINK, tournaItem.getTournaWebSite());
             cv.put(AppDatabase.TournasDatabase.MAP_TILE_NAME, tournaItem.getTournaMapTile());
             cv.put(AppDatabase.TournasDatabase.MAP_URL, tournaItem.getTournaMapUrl());
@@ -400,21 +400,21 @@ public class AppSqlHelper extends SQLiteOpenHelper {
 
         public ATPTournasCursor queryAtpTournasMasters1000(int month) {
             if(month == ALL_MONTHS) {
-                final String WHERE = AppDatabase.TournasDatabase.IS_MASTERS1000 + "=1";
+                final String WHERE = AppDatabase.TournasDatabase.IS_PREMIER + "=1";
                 return this.executeQuery(WHERE);
             } else if(month == CURRENT_WEEK) {
                 Calendar cal = Calendar.getInstance();
                 int week = cal.get(Calendar.WEEK_OF_YEAR);
                 final String WHERE = "(" + AppDatabase.TournasDatabase.DATE_WEEK_START + "=" + week + " OR " +
-                        week + "=" +AppDatabase.TournasDatabase.DATE_WEEK_END + ") AND " + AppDatabase.TournasDatabase.IS_MASTERS1000 + "=1";
+                        week + "=" +AppDatabase.TournasDatabase.DATE_WEEK_END + ") AND " + AppDatabase.TournasDatabase.IS_PREMIER + "=1";
                 return this.executeQuery(WHERE);
             }  else if(month == COMPLETED) {
                 Calendar cal = Calendar.getInstance();
                 int week = cal.get(Calendar.WEEK_OF_YEAR);
-                final String WHERE = AppDatabase.TournasDatabase.DATE_WEEK_END + " < " + week + " AND " + AppDatabase.TournasDatabase.IS_MASTERS1000 + "= 1";
+                final String WHERE = AppDatabase.TournasDatabase.DATE_WEEK_END + " < " + week + " AND " + AppDatabase.TournasDatabase.IS_PREMIER + "= 1";
                 return this.executeQuery(WHERE);
             } else {
-                final String WHERE = AppDatabase.TournasDatabase.DATE_MONTH + "=" + String.valueOf(month-MONTH_DELTA) + " AND "  + AppDatabase.TournasDatabase.IS_MASTERS1000 + "=1";
+                final String WHERE = AppDatabase.TournasDatabase.DATE_MONTH + "=" + String.valueOf(month-MONTH_DELTA) + " AND "  + AppDatabase.TournasDatabase.IS_PREMIER + "=1";
                 return this.executeQuery(WHERE);
             }
         }

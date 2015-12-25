@@ -69,7 +69,7 @@ public final class AppDatabase {
         private TournasDatabase() {
         }
 
-        public static final String TABLE_NAME = "tournas_2015";
+        public static final String TABLE_NAME = "tournas_2016";
         public static final String TOURNA_ID = "tournaid";
         public static final String NAME = "name";
         public static final String LINK = "link";
@@ -89,7 +89,7 @@ public final class AppDatabase {
         public static final String IS_STARRED = "isstarred";
         public static final String IS_SHARED = "isshared";
         public static final String IS_SLAM = "isslam";
-        public static final String IS_MASTERS1000 = "ismasters1000";
+        public static final String IS_PREMIER = "ispremier";
         public static final String SHARE_TEXT = "sharetext";
         public static final String EVENT_ID = "eventid";
 
@@ -106,7 +106,7 @@ public final class AppDatabase {
             sb.append(TournasDatabase.TOURNA_ID).append(" INTEGER").append(" UNIQUE,");
             sb.append(TournasDatabase.NAME).append(" TEXT,");
             sb.append(TournasDatabase.IS_SLAM).append(" TEXT,");
-            sb.append(TournasDatabase.IS_MASTERS1000).append(" TEXT,");
+            sb.append(TournasDatabase.IS_PREMIER).append(" TEXT,");
             sb.append(TournasDatabase.LINK).append(" TEXT,");
             sb.append(TournasDatabase.MAP_TILE_NAME).append(" TEXT,");
             sb.append(TournasDatabase.MAP_URL).append(" TEXT,");

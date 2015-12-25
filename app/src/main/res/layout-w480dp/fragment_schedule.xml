@@ -64,7 +64,7 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:id="@+id/headerMasters1000"
-            android:text="@string/schedule_tourna_header_masters1000"
+            android:text="@string/schedule_tourna_header_premier"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="@color/tourna_tab_foreground_unselected"

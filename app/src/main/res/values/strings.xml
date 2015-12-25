@@ -39,8 +39,8 @@
     <string name="ranking_player_titles_career">&lt;b>%1$s&lt;/b> titles</string>
     <string name="ranking_player_titles_slam_ytd">&lt;b>%1$s&lt;/b> grand slam</string>
     <string name="ranking_player_titles_slam_career">&lt;b>%1$s&lt;/b> grand slam</string>
-    <string name="ranking_player_titles_masters1000_ytd">&lt;b>%1$s&lt;/b> masters1000</string>
-    <string name="ranking_player_titles_masters1000_career">&lt;b>%1$s&lt;/b> masters1000</string>
+    <string name="ranking_player_titles_premier_ytd">&lt;b>%1$s&lt;/b> premier</string>
+    <string name="ranking_player_titles_premier_career">&lt;b>%1$s&lt;/b> premier</string>
     <string name="ranking_header_all_players">ALL PLAYERS</string>
     <string name="ranking_header_top_players">TOP PLAYERS</string>
     <string name="ranking_header_titles_ytd_players">TITLES YTD</string>
@@ -49,7 +49,7 @@
     <string name="schedule_tourna_header_all">ALL</string>
     <string name="schedule_tourna_header_grand_slam_480dp">GRAND SLAMS</string>
     <string name="schedule_tourna_header_grand_slam">SLAMS</string>
-    <string name="schedule_tourna_header_masters1000">MASTERS 1000</string>
+    <string name="schedule_tourna_header_premier">PREMIER</string>
     <string name="schedule_tourna_header_starred">STARRED</string>
     <string name="schedule_tourna_site">Official site</string>
     <string name="schedule_tourna_event_add">Add event</string>
@@ -62,7 +62,7 @@
     <string name="schedule_tourna_surface">Played on &lt;b>%1$s&lt;/b> court</string>
     <string name="schedule_tourna_prize_money">&lt;b>%1$s&lt;/b> prize money</string>
     <string name="schedule_tourna_grand_slam">Grand Slam</string>
-    <string name="schedule_tourna_masters_1000">Masters 1000</string>
+    <string name="schedule_tourna_premier">Premier</string>
     <string name="schedule_spinner_title">View Tournaments</string>
     <string name="schedule_share_heading">Share WTA Tournament:</string>
     <string name="schedule_copy_heading">Copy ATP Tournament:</string>

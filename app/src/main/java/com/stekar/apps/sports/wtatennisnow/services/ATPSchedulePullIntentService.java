@@ -36,7 +36,7 @@ public class ATPSchedulePullIntentService extends IntentService {
             "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=15n19h4xhfLxp6Uva3NWTU_eQnA2u6V7AcJJDnIyPLIY";
 
     public static final String DOWNLOAD_TOURNAS_FEED_URL =
-            "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1q8ZDp0rv06FScVon9o6a9ebnLy31kC3EtY03D4OEhaA";
+            "https://docs.google.com/document/export?format=txt&confirm=no_antivirus&id=1k4yRP7EMGhkD1ArB9mXPbvc0k5McPz6q99sPsI4XsFA";
 
     public ATPSchedulePullIntentService() {
         super("ATPRankingPullIntentService");

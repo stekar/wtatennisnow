@@ -182,6 +182,11 @@ public class ATPNews {
             int month = DateUtils.monthOfYear(mPubDateMonth);
             int day = Integer.parseInt(mPubDateNumber);
             int hr = Integer.parseInt(mPubDateHr);
+            // otherwise every published feed are post midnight - bug in WTA RSS publisher (00:14)
+            // and we never have a 'TODAY', always the day in the past
+            //if(hr == 0) {
+              //  hr = 11;
+            //}
             int min = Integer.parseInt(mPubDateMin);
             int sec = Integer.parseInt(mPubDateSec);
 

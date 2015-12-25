@@ -21,7 +21,7 @@ public class ATPSchedule {
     private String tournaPoints;
     private String tournaSurface;
     private boolean tournaSlam;
-    private boolean tournaMaster;
+    private boolean tournaPremier;
     private String tournaPrizeMoney;
     private String tournaWebSite;
     private String tournaMapUrl;
@@ -93,11 +93,11 @@ public class ATPSchedule {
         this.tournaSlam = tournaSlam;
     }
 
-    public boolean getTournaMaster() {
-        return tournaMaster;
+    public boolean getTournaPremier() {
+        return tournaPremier;
     }
-    public void setTournaMaster(boolean tournaMaster) {
-        this.tournaMaster = tournaMaster;
+    public void setTournaPremier(boolean tournaPremier) {
+        this.tournaPremier = tournaPremier;
     }
 
     public String getTournaPrizeMoney() {
