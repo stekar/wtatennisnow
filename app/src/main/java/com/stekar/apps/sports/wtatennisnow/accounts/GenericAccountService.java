@@ -30,7 +30,7 @@ import android.util.Log;
 public class GenericAccountService extends Service {
     private static final String TAG = "TENNISNOW_GENERIC_ACCOUNT_SERVICE";
     private static final String ACCOUNT_TYPE = "com.stekar.apps.sports.wtatennisnow.sync";
-    public static final String ACCOUNT_NAME = "sync";
+    public static final String ACCOUNT_NAME = "WTATennisNowSync";
     private Authenticator mAuthenticator;
 
     /**
