@@ -46,6 +46,9 @@ public class ATPScheduleDownloader {
     }
 
     private void setWeekNumbers( ArrayList<ATPSchedule> entries) {
+        // Use the database table name "tournas_YEAR" to extract the year
+        // that's to avoid Calendar.YEAR which will always return the current year,
+        // making it hard to get updated schedules for the subsequent years.
         String databaseYear = AppDatabase.TournasDatabase.TABLE_NAME;
         String[] databaseYearParts = databaseYear.split("_");
         int tournaYear = Integer.parseInt(databaseYearParts[1]);

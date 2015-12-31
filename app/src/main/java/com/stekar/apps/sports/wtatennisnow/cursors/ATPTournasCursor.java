@@ -42,6 +42,9 @@ public class ATPTournasCursor extends CursorWrapper {
         String monthDisplayName = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US);
         tournaItem.setTournaMonthDisplayName(monthDisplayName);
 
+        // Use the database table name "tournas_YEAR" to extract the year
+        // that's to avoid Calendar.YEAR which will always return the current year,
+        // making it hard to get updated schedules for the subsequent years.
         int year = getInt(getColumnIndex(AppDatabase.TournasDatabase.DATE_YEAR));
         tournaItem.setTournaYear(year);
 
