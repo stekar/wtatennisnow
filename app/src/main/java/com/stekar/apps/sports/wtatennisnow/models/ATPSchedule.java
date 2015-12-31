@@ -13,6 +13,7 @@ public class ATPSchedule {
     private String tournaCountry;
     private String tournaCity;
     private int tournaMonth;
+    private int tournaYear;
     private int mTournaWeekStart;
     private int mTournaWeekEnd;
     private long mTournaEventId;
@@ -63,6 +64,13 @@ public class ATPSchedule {
     }
     public void setTournaMonth(int tournaMonth) {
         this.tournaMonth = tournaMonth;
+    }
+
+    public int getTournaYear() {
+        return tournaYear;
+    }
+    public void setTournaYear(int tournaYear) {
+        this.tournaYear = tournaYear;
     }
 
     public String getTournaDay() {

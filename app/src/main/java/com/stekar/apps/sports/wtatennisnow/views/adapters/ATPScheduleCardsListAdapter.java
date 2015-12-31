@@ -77,7 +77,9 @@ public class ATPScheduleCardsListAdapter extends RecyclerView.Adapter<ATPSchedul
         long endMillis = 0;
 
         Calendar beginTime = Calendar.getInstance();
-        int year = beginTime.get(Calendar.YEAR);
+        //int year = beginTime.get(Calendar.YEAR);
+        int year = scheduleItem.getTournaYear();
+
         beginTime.set(year, scheduleItem.getTournaMonth(), Integer.parseInt(scheduleItem.getTournaDay()), 8, 0);
         int duration = scheduleItem.getTournaWeekEnd() - scheduleItem.getTournaWeekStart();
         int durationDays = duration == 0 ? 7 : 14;

@@ -42,6 +42,9 @@ public class ATPTournasCursor extends CursorWrapper {
         String monthDisplayName = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US);
         tournaItem.setTournaMonthDisplayName(monthDisplayName);
 
+        int year = getInt(getColumnIndex(AppDatabase.TournasDatabase.DATE_YEAR));
+        tournaItem.setTournaYear(year);
+
         int weekStart = getInt(getColumnIndex(AppDatabase.TournasDatabase.DATE_WEEK_START));
         tournaItem.setTournaWeekStart(weekStart);
 

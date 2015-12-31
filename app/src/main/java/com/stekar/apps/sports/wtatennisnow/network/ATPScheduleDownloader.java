@@ -21,6 +21,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.stekar.apps.sports.wtatennisnow.app.AppController;
 import com.stekar.apps.sports.wtatennisnow.constants.PrefsConstants;
+import com.stekar.apps.sports.wtatennisnow.database.AppDatabase;
 import com.stekar.apps.sports.wtatennisnow.database.AppSqlHelper;
 import com.stekar.apps.sports.wtatennisnow.models.*;
 import com.stekar.apps.sports.wtatennisnow.utils.BooleanUtils;
@@ -45,6 +46,10 @@ public class ATPScheduleDownloader {
     }
 
     private void setWeekNumbers( ArrayList<ATPSchedule> entries) {
+        String databaseYear = AppDatabase.TournasDatabase.TABLE_NAME;
+        String[] databaseYearParts = databaseYear.split("_");
+        int tournaYear = Integer.parseInt(databaseYearParts[1]);
+
         Calendar cal = Calendar.getInstance();
 
         for(ATPSchedule scheduleItem : entries) {
@@ -66,6 +71,7 @@ public class ATPScheduleDownloader {
                 scheduleItem.setTournaWeekEnd(week);
             }
 
+            scheduleItem.setTournaYear(tournaYear);
             String monthDisplayName = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US);
             scheduleItem.setTournaMonthDisplayName(monthDisplayName);
             this.setShareText(scheduleItem);

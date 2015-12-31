@@ -296,6 +296,7 @@ public class AppSqlHelper extends SQLiteOpenHelper {
             cv.put(AppDatabase.TournasDatabase.NAME, tournaItem.getTournaName());
             cv.put(AppDatabase.TournasDatabase.DATE_NUMBER, tournaItem.getTournaDay());
             cv.put(AppDatabase.TournasDatabase.DATE_MONTH, tournaItem.getTournaMonth());
+            cv.put(AppDatabase.TournasDatabase.DATE_YEAR, tournaItem.getTournaYear());
             cv.put(AppDatabase.TournasDatabase.DATE_WEEK_START, tournaItem.getTournaWeekStart());
             cv.put(AppDatabase.TournasDatabase.DATE_WEEK_END, tournaItem.getTournaWeekEnd());
             cv.put(AppDatabase.TournasDatabase.CITY, tournaItem.getTournaCity());

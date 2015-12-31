@@ -91,11 +91,17 @@ public class AppController extends Application {
         final String[] EVENT_PROJECTION = new String[] {
                 CalendarContract.Calendars._ID,                           // 0
                 CalendarContract.Calendars.ACCOUNT_NAME,                  // 1
+                CalendarContract.Calendars.CALENDAR_DISPLAY_NAME,         // 2
+                CalendarContract.Calendars.VISIBLE,                       // 3
+                CalendarContract.Calendars.IS_PRIMARY                     // 4
         };
 
         // The indices for the projection array above.
         final int PROJECTION_ID_INDEX = 0;
         final int PROJECTION_ACCOUNT_NAME_INDEX = 1;
+        final int PROJECTION_CALENDAR_DISPLAY_NAME_INDEX = 2;
+        final int PROJECTION_CALENDAR_VISIBLE_INDEX = 3;
+        final int PROJECTION_CALENDAR_IS_PRIMARY_INDEX = 4;
 
         // Run query
         Cursor cursor = null;
@@ -105,19 +111,25 @@ public class AppController extends Application {
         String[] selectionArgs = new String[] {"com.google"};
 
         // Submit the query and get a Cursor object back.
-        cursor = cr.query(uri, EVENT_PROJECTION, selection, selectionArgs, null);
+        cursor = cr.query(uri, EVENT_PROJECTION, null, null, null);
 
         // Use the cursor to step through the returned records
         long googleCalId = 1;
         while (cursor.moveToNext()) {
             long calID = 0;
             String accountName = null;
+            String isVisible = null;
+            String displayName = null;
+            String isPrimary = null;
 
             // Get the field values
             calID = cursor.getLong(PROJECTION_ID_INDEX);
             accountName = cursor.getString(PROJECTION_ACCOUNT_NAME_INDEX);
+            isVisible = cursor.getString(PROJECTION_CALENDAR_VISIBLE_INDEX);
+            displayName = cursor.getString(PROJECTION_CALENDAR_DISPLAY_NAME_INDEX);
+            isPrimary = cursor.getString(PROJECTION_CALENDAR_IS_PRIMARY_INDEX);
 
-            if(accountName.contains("@gmail")) {
+            if(isVisible.contains("1") && isPrimary.contains("1") && accountName.contains("@gmail")) {
                 googleCalId = calID;
                 break;
             }

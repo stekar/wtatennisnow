@@ -78,6 +78,7 @@ public final class AppDatabase {
         public static final String POINTS = "points";
         public static final String DATE_NUMBER = "datenumber";
         public static final String DATE_MONTH = "datemonth";
+        public static final String DATE_YEAR = "dateyear";
         public static final String DATE_WEEK_START = "dateweekstart";
         public static final String DATE_WEEK_END = "dateweekend";
         public static final String CITY = "city";
@@ -112,6 +113,7 @@ public final class AppDatabase {
             sb.append(TournasDatabase.MAP_URL).append(" TEXT,");
             sb.append(TournasDatabase.DATE_NUMBER).append(" TEXT,");
             sb.append(TournasDatabase.DATE_MONTH).append(" INTEGER,");
+            sb.append(TournasDatabase.DATE_YEAR).append(" INTEGER,");
             sb.append(TournasDatabase.DATE_WEEK_START).append(" INTEGER,");
             sb.append(TournasDatabase.DATE_WEEK_END).append(" INTEGER,");
             sb.append(TournasDatabase.CITY).append(" TEXT,");
