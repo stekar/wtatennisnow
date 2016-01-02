@@ -129,6 +129,7 @@ public class AppController extends Application {
             displayName = cursor.getString(PROJECTION_CALENDAR_DISPLAY_NAME_INDEX);
             isPrimary = cursor.getString(PROJECTION_CALENDAR_IS_PRIMARY_INDEX);
 
+            // Handle only visible calendars
             if(isVisible.contains("1") && isPrimary.contains("1") && accountName.contains("@gmail")) {
                 googleCalId = calID;
                 break;
